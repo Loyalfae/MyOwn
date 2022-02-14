@@ -8,17 +8,21 @@
 # 1. Create/read a text file by using approprite php functions 
     # Step 1: check if file exists or not
  ECHO "<h2> Checking if file exists or Not</h2>";
- $filename:'';
- if(file_exists($filename))
+ if(file_exists("Header.php"))
  {
-     ECHO "the $filename exists !"
+     ECHO "the file exists !";
  } else 
- {
-     ECHO " the $filename doesn't exists !"
- }
-
+     ECHO " the file doesn't exists !";
 
     # Step 2: Open the file using appropriate mode. (each member opens the file in different mode)
+    $myfile = fopen("gfg.txt", 'r+') 
+    or die("File does not exist!");
+      
+    $pointer = fgets($myfile);
+    ECHO $pointer;
+    fclose($myfile);
+
+
     # Step 3: Use fwrite/fread function to write/read on the file your team name and members name. 
     # Step 4: Close the file 
 
