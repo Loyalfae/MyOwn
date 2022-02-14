@@ -30,11 +30,5 @@ fclose($newfile);
 
     # Step 3: Use fwrite/fread function to write/read on the file your team name and members name. 
     ECHO "<h2> read on the file your team name and members name</h2>";
-  $fname = "hello.txt";
-  $handle = fopen($fname,"r")
-  $cont = fread($handle, filesize($fname));
-  ECHO $cont;
-  fclose($handle);
-
 
 ?>
