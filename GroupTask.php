@@ -18,3 +18,12 @@ fclose($newfile);
      ECHO "the file exists !";
  } else 
      ECHO " the file doesn't exists !";
+
+    # Step 2: Open the file using appropriate mode. (each member opens the file in different mode)
+    ECHO "<h2> Open the file</h2>";
+    $openfile = fopen("hello.txt", 'a') 
+    or die("File does not exist!");
+
+    $pointer = fgets($openfile);
+    ECHO $pointer;
+    fclose($openfile);
