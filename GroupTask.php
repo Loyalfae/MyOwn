@@ -23,14 +23,18 @@ fclose($newfile);
     ECHO "<h2> Open the file</h2>";
     $openfile = fopen("hello.txt", 'a') 
     or die("File does not exist!");
-    
+
     $pointer = fgets($openfile);
     ECHO $pointer;
     fclose($openfile);
 
     # Step 3: Use fwrite/fread function to write/read on the file your team name and members name. 
     ECHO "<h2> read on the file your team name and members name</h2>";
-
+  $fname = "hello.txt";
+  $handle = fopen($fname,"r")
+  $cont = fread($handle, filesize($fname));
+  ECHO $cont;
+  fclose($handle);
 
 
     # Step 4: Close the file 
