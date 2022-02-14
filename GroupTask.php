@@ -15,7 +15,7 @@
      ECHO " the file doesn't exists !";
 
     # Step 2: Open the file using appropriate mode. (each member opens the file in different mode)
-    $myfile = fopen("gfg.txt", 'r+') 
+    $myfile = fopen("exercice3.php", 'r') 
     or die("File does not exist!");
       
     $pointer = fgets($myfile);
