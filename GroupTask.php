@@ -8,7 +8,7 @@
 # 1. Create/read a text file by using approprite php functions 
     # Step 1: check if file exists or not
  ECHO "<h2> Checking if file exists or Not</h2>";
- $filename:"";
+ $filename:'';
  if(file_exists($filename))
  {
      ECHO "the $filename exists !"
