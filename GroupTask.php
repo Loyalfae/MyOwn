@@ -15,7 +15,7 @@
      ECHO " the file doesn't exists !";
 
     # Step 2: Open the file using appropriate mode. (each member opens the file in different mode)
-    $myfile = fopen("exercice3.php", 'r') 
+    $myfile = fopen("Hello.txt", 'r') 
     or die("File does not exist!");
       
     $pointer = fgets($myfile);
@@ -24,6 +24,8 @@
 
 
     # Step 3: Use fwrite/fread function to write/read on the file your team name and members name. 
+
+
     # Step 4: Close the file 
 
 #2. Uploaing files 
