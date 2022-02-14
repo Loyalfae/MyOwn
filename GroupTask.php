@@ -15,6 +15,7 @@
      ECHO " the file doesn't exists !";
 
     # Step 2: Open the file using appropriate mode. (each member opens the file in different mode)
+    ECHO "<h2> Open the file</h2>";
     $openfile = fopen("Hello.txt", 'r') 
     or die("File does not exist!");
       
