@@ -13,7 +13,7 @@ fwrite($newfile, $txt);
 fclose($newfile);
 
  ECHO "<h2> Checking if file exists or Not</h2>";
- if(file_exists("Header.php"))
+ if(file_exists("hello.txt"))
  {
      ECHO "the file exists !";
  } else 
@@ -21,7 +21,7 @@ fclose($newfile);
 
     # Step 2: Open the file using appropriate mode. (each member opens the file in different mode)
     ECHO "<h2> Open the file</h2>";
-    $openfile = fopen("Hello.txt", 'a') 
+    $openfile = fopen("hello.txt", 'a') 
     or die("File does not exist!");
     
     $pointer = fgets($openfile);
