@@ -7,6 +7,11 @@
 
 # 1. Create/read a text file by using approprite php functions 
     # Step 1: check if file exists or not
+$newfile =fopen('hello.txt','a') or die ("Failed to create a file");
+$txt ="Hello , I'm Wafa and I'm a member of team 5. <br>";
+fwrite($newfile, $txt);
+fclose($newfile);
+
  ECHO "<h2> Checking if file exists or Not</h2>";
  if(file_exists("Header.php"))
  {
@@ -25,6 +30,7 @@
 
     # Step 3: Use fwrite/fread function to write/read on the file your team name and members name. 
     ECHO "<h2> write/read on the file your team name and members name</h2>";
+
 
     # Step 4: Close the file 
 
