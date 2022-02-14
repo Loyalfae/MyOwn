@@ -30,7 +30,6 @@ fclose($newfile);
     ECHO $pointer;
     fclose($openfile);
 
-    
 
 #2. Uploaing files 
      # Step 1: Create a simple html form to upload a file. 
