@@ -18,35 +18,3 @@ fclose($newfile);
      ECHO "the file exists !";
  } else 
      ECHO " the file doesn't exists !";
-
-    # Step 2: Open the file using appropriate mode. (each member opens the file in different mode)
-    ECHO "<h2> Open the file</h2>";
-    $openfile = fopen("hello.txt", 'a') 
-    or die("File does not exist!");
-
-    $pointer = fgets($openfile);
-    ECHO $pointer;
-    fclose($openfile);
-
-    # Step 3: Use fwrite/fread function to write/read on the file your team name and members name. 
-    ECHO "<h2> read on the file your team name and members name</h2>";
-  $fname = "hello.txt";
-  $handle = fopen($fname,"r")
-  $cont = fread($handle, filesize($fname));
-  ECHO $cont;
-  fclose($handle);
-
-
-    # Step 4: Close the file 
-    ECHO "<h2> Close the file</h2>";
-    fclose($newfile);
-
-#2. Uploaing files 
-     # Step 1: Create a simple html form to upload a file. 
-     ECHO "<h2> html form</h2>";
-     # Step 2: You are required to limit the upload file size to 2 MB. 
-     # Step 3: Make sure that users can submit only images. 
-     # Step 4: Upon successful upload, you print a message "File uploaded successfully" and also 
-     # provide the link to the directory where files are uploaded.
-
-?>
