@@ -7,8 +7,13 @@
 
 # 1. Create/read a text file by using approprite php functions 
     # Step 1: check if file exists or not
+$newfile =fopen('hello.txt','a') or die ("Failed to create a file");
+$txt ="Hello , I'm Wafa and I'm a member of team 5. <br>";
+fwrite($newfile, $txt);
+fclose($newfile);
+
  ECHO "<h2> Checking if file exists or Not</h2>";
- if(file_exists("Header.php"))
+ if(file_exists("hello.txt"))
  {
      ECHO "the file exists !";
  } else 
@@ -16,20 +21,25 @@
 
     # Step 2: Open the file using appropriate mode. (each member opens the file in different mode)
     ECHO "<h2> Open the file</h2>";
-    $openfile = fopen("Hello.txt", 'r') 
+    $openfile = fopen("hello.txt", 'a') 
     or die("File does not exist!");
-      
+    
     $pointer = fgets($openfile);
     ECHO $pointer;
     fclose($openfile);
 
     # Step 3: Use fwrite/fread function to write/read on the file your team name and members name. 
+    ECHO "<h2> read on the file your team name and members name</h2>";
+
 
 
     # Step 4: Close the file 
+    ECHO "<h2> Close the file</h2>";
+    fclose($newfile);
 
 #2. Uploaing files 
      # Step 1: Create a simple html form to upload a file. 
+     ECHO "<h2> html form</h2>";
      # Step 2: You are required to limit the upload file size to 2 MB. 
      # Step 3: Make sure that users can submit only images. 
      # Step 4: Upon successful upload, you print a message "File uploaded successfully" and also 
