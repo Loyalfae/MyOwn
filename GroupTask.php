@@ -15,13 +15,12 @@
      ECHO " the file doesn't exists !";
 
     # Step 2: Open the file using appropriate mode. (each member opens the file in different mode)
-    $myfile = fopen("Hello.txt", 'r') 
+    $openfile = fopen("Hello.txt", 'r') 
     or die("File does not exist!");
       
-    $pointer = fgets($myfile);
+    $pointer = fgets($openfile);
     ECHO $pointer;
-    fclose($myfile);
-
+    fclose($openfile);
 
     # Step 3: Use fwrite/fread function to write/read on the file your team name and members name. 
 
