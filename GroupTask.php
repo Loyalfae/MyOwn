@@ -21,9 +21,20 @@ fclose($newfile);
 
     # Step 2: Open the file using appropriate mode. (each member opens the file in different mode)
     ECHO "<h2> Open the file</h2>";
-    $openfile = fopen("hello.txt", 'a') 
+    $openfile = fopen("hello.txt", 'r') 
     or die("File does not exist!");
 
     $pointer = fgets($openfile);
     ECHO $pointer;
     fclose($openfile);
+
+    # Step 3: Use fwrite/fread function to write/read on the file your team name and members name. 
+    ECHO "<h2> read on the file your team name and members name</h2>";
+  $fname = "hello.txt";
+  $handle = fopen($fname,"r")
+  $cont = fread($handle, filesize($fname));
+  ECHO $cont;
+  fclose($handle);
+
+
+?>
