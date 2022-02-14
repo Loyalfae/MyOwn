@@ -1,11 +1,13 @@
 <?php
+ ECHO "<h1> Array Exercise </h1>";
 /*
 1. Write a php script to display courses as list. Use <li>
 $courses=array("PHP", "HTML", "JavaScript", "CMS", "Project")
 */
+ECHO "<h2> Task1 </h2>";
 $courses=array("PHP", "HTML", "JavaScript", "CMS", "Project");
-$lcourses=count($courses);
-for ($i=0;$i<$lcourses;$i++);
+$countcourses=count($courses);
+for ($i=0;$i<$countcourses;$i++);
 {
     ECHO "< li > {$courses[$i]} < /li > \n";
 }
