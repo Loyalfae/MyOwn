@@ -29,13 +29,17 @@ fclose($newfile);
     fclose($openfile);
 
     # Step 3: Use fwrite/fread function to write/read on the file your team name and members name. 
-    ECHO "<h2> write/read on the file your team name and members name</h2>";
+    ECHO "<h2> read on the file your team name and members name</h2>";
+
 
 
     # Step 4: Close the file 
+    ECHO "<h2> Close the file</h2>";
+    fclose($newfile);
 
 #2. Uploaing files 
      # Step 1: Create a simple html form to upload a file. 
+     ECHO "<h2> html form</h2>";
      # Step 2: You are required to limit the upload file size to 2 MB. 
      # Step 3: Make sure that users can submit only images. 
      # Step 4: Upon successful upload, you print a message "File uploaded successfully" and also 
